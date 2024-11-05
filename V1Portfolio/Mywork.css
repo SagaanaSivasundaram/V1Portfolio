@@ -1,0 +1,105 @@
+/* Make the canvas cover the entire webpage */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;  /* Prevent scrolling */
+}
+
+canvas {
+    display: none;  /* Hidden until game starts */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;  /* Behind everything */
+}
+
+/* Start screen wrapper */
+#startScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none; /* Prevent clicks on the background */
+}
+
+/* Background blur effect */
+#startScreen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Njbg.jpg') no-repeat center center; 
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+/* Character selection container */
+#characterSelection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; 
+    pointer-events: all; 
+}
+
+#characterSelection img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent; 
+    border-radius: 50%;  
+}
+
+#characterSelection img.selected {
+    border-color: white; 
+}
+
+#characterSelection img:hover {
+    transform: scale(1.3); 
+}
+
+#startLogo {
+    cursor: pointer;
+    width: 300px;
+    margin-bottom: 30px;
+    z-index: 2; 
+    pointer-events: all; 
+}
+
+#startLogo:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}

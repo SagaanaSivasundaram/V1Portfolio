@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Game</title>
+    <link rel="stylesheet" href="Mywork.css">
+    <script src="Mywork.js" defer></script>
+</head>
+<body>
+    <!-- Start screen overlay with character selection -->
+    <div id="startScreen">
+        <img id="startLogo" src="Startlogo.png" alt="Start Game Logo">
+        <div id="characterSelection">
+            <img id="hanni" src="Hanni.png" alt="Hanni">
+            <img id="danielle" src="Danielle.png" alt="Danielle">
+            <img id="haerin" src="Haerin.png" alt="Haerin">
+            <img id="minji" src="Minji.png" alt="Minji">
+            <img id="hyein" src="Hyein.png" alt="Hyein">
+        </div>
+    </div>
+
+    <!-- In-game screen overlay -->
+    <div id="gameScreen" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Background music -->
+    <audio id="backgroundMusic" src="NewJeans-Instrumental.mp3" loop></audio>
+</body>
+</html>

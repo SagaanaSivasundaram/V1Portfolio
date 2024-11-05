@@ -1,0 +1,437 @@
+/* General styling and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /
+}
+
+body {
+    color: #333;
+    font-family: sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40vh; 
+}
+
+.header img {
+    width: 500px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+/*circles bij de logo */ 
+
+.random-rondjes {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.circle {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #eddddd
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+/* css voor beide text en afbeelding */
+.box1 {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 40px; 
+    padding: 20px;
+} 
+
+/* Intro images */
+.intro-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} 
+
+/* Individual photo containers */
+.intro-photo-1, .intro-photo-2 {
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #dab6ba;
+}
+
+/* Individual photo containers */
+.intro-photo-1 img, .intro-photo-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* witte button text balkje 1st */
+.witte-button {
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* mijn volle naam in de witte button */
+.naam {
+    color: #b38787;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* text over mij */
+.intro-over-mij p {
+    color: #ad8484;
+    font-size: 11px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+/* gemarkeerde woordjes in de 'over mij' text */
+.highlight {
+    color: #bcbcbc;
+    font-weight: bold;
+}
+
+/* 2de rose button balkje */
+button {
+    width: 160px;
+    background-color: #d9c9d9;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    color: #ad8484; 
+    cursor: pointer;
+    font-size: 11px;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #f8dada;
+}
+
+/* rose button text */
+.random-text {
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* Container for the entire box */
+.white-box {
+    display: flex;
+    background-color: white;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling for the left side with hobby images */
+.hobby-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.hobby-images img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for the skills images */
+.skills-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+/* Styling for the right side with text (hobby context) */
+.context-hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    line-height: 1.5;
+    
+}
+
+.context-hobby h2 {
+    margin: 0;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.context-hobby p {
+    font-size: 10px;
+    color: #666;
+}
+
+/* skill stuk onder mijn hobbies */
+.technical-skills {
+    display: flex;
+    flex-direction: column;    
+}
+
+/* title */
+.technical-skills h2 {
+    font-size: 13px;
+    color: #333;
+}
+
+/* H2 de titel */
+.technical-skills h2 {
+    color: #000000; 
+    font-size: 12px;
+    align-self: flex-start; 
+    padding-top: 35px;
+}
+
+/* H3 uitleg voor de titel */
+.technical-skills h3 {
+    color: #d0afae; 
+    font-size: 11px;
+    font-weight: 100;
+    align-self: flex-start; 
+}
+
+/* mijn skills genaral */
+.technical-skills p {
+    font-size: 11px;
+    color: #555;
+}
+
+/* hover effect */
+.technical-skills p:hover {
+    color: #000; 
+}
+
+/* einde van eerste sectie */
+
+/* Flex container for .box1 and .box2 */
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; /* Adds space between .box1 and .box2 */
+    margin-top: 20px;
+}
+
+/* General styles for box2 */
+.box2 {
+    width: 53%; /* Adjust width as needed or use a specific value */
+    max-width: 600px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox wrapper inside box2 for left alignment */
+.box2-content1 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+/* Title and text styling */
+
+/* stijling van de title en kleur */
+.bruinig-button {
+    background-color: #d9c9d9; 
+    color: #fff; 
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* lettertype en maat */
+.bruinig-button .titel {
+    font-size: 12px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.ed-learning {
+    color: #ad8484; 
+    line-height: 1.5; 
+    font-size: 11px; 
+}
+
+.ed-learning p {
+    margin-bottom: 15px;
+}
+
+
+
+/* Vanaf hier worden de commands transform verandert!!! */
+
+
+
+/* Flex container for main photo */
+.main-bloem {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    width: 100%; /* Full width */
+    position: absolute;
+    bottom: -530px;
+    padding-left: 40px;
+}
+
+.Main-foto {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 100%;
+
+}
+
+.Main-foto img {
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    border: 5px solid #eddddd;
+}
+
+
+
+
+
+
+
+/* Flex container for the contact image section */
+.contact-section {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    position: absolute;
+    top: 880px;
+    right: 20px;
+}
+
+.contact-section img {
+    width: 450px; 
+    height: auto;
+}
+
+
+/* Flex container for contact information */
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 30px; 
+    width: 50%; 
+    max-width: 400px;
+    margin-left: auto; 
+    margin-top: -20px;
+}
+
+
+/* Text styling for contact part */
+
+.contact-info p {
+    color: #ad8484;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.contact-info .highlight {
+    color: #bcbcbc;
+    font-weight: bold;
+}
+
+.click p {
+    color: #c8adad;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+/*kat*/
+
+.kat-gif {
+    width: 10px;
+    height: auto;
+    padding-left: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-section, .details-section, .news-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-photo, .detail-item, .news-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .news-section {
+        gap: 20px;
+    }
+}
+
